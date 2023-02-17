@@ -16,12 +16,19 @@
           action="https://formsubmit.co/0ef05d8377e88b95981713f6e57bee10"
           method="POST"
         >
+          <!-- Honeypot -->
+          <input type="text" name="_honey" style="display: none" />
+
+          <!-- Disable captcha -->
+          <input type="hidden" name="_captcha" value="false" />
+
           <p class="contact-form-title">Contact us</p>
           <div class="name-email-container">
             <input
               type="text"
               id="name-input"
               class="name-input"
+              name="name"
               placeholder="Name"
               required
             />
@@ -29,6 +36,7 @@
               type="email"
               id="email-input"
               class="email-input"
+              name="email"
               placeholder="Email"
               required
             />
@@ -36,6 +44,7 @@
           <textarea
             id="message-input"
             class="message-input"
+            name="comments, questions"
             rows="4"
             placeholder="Message"
           ></textarea>
