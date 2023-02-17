@@ -1,0 +1,80 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: cursive;
+}
+
+.contact-container-main {
+  justify-content: center;
+  display: flex;
+  padding-top: 30px;
+}
+
+.contact-container-sub {
+  padding: 0px 30px 30px 30px;
+  background-color: rgba(128, 128, 128, 0.753);
+  border-radius: 10px;
+}
+
+.contact-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.contact-form-title {
+  margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: 500;
+  color: rgba(0, 0, 255, 0.5);
+}
+
+.name-email-container {
+  width: 400px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.name-input,
+.email-input {
+  width: 150px;
+  height: 18px;
+  padding: 4px 10px;
+  border: none;
+  border-radius: 13px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.message-input {
+  border: none;
+  resize: none;
+  border-radius: 10px;
+  padding: 5px;
+  margin-bottom: 20px;
+  width: 400px;
+  height: 100px;
+  box-sizing: border-box;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.submit-btn {
+  background-color: rgba(0, 0, 255, 0.5);
+  color: white;
+  padding: 4px 16px;
+  border: none;
+  border-radius: 20px;
+  font-size: 16px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.submit-btn:hover {
+  cursor: pointer;
+  background-color: rgba(0, 0, 255, 0.8);
+}
+.name-input::placeholder,
+.email-input::placeholder,
+.message-input::placeholder {
+  font-family: cursive;
+}

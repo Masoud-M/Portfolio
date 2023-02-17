@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>New Website</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="contact-container-main" id="contact-container">
+      <div class="contact-container-sub" id="contact-container-sub">
+        <form
+          id="contact-form"
+          class="contact-form"
+          action="https://formsubmit.co/antioffcamera@gmail.com"
+          method="POST"
+        >
+          <p class="contact-form-title">Contact us</p>
+          <div class="name-email-container">
+            <input
+              type="text"
+              id="name-input"
+              class="name-input"
+              placeholder="Name"
+              required
+            />
+            <input
+              type="email"
+              id="email-input"
+              class="email-input"
+              placeholder="Email"
+              required
+            />
+          </div>
+          <textarea
+            id="message-input"
+            class="message-input"
+            rows="4"
+            placeholder="Message"
+          ></textarea>
+          <input type="submit" id="submit-btn" class="submit-btn" />
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
