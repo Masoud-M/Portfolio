@@ -10,52 +10,49 @@
     <link rel="stylesheet" href="sidebar.css" />
   </head>
   <body>
-        <!-- Sidebar -->
-        <div class="open-sidebar" id="open-sidebar">
-          <button id="open-sidebar-btn" onclick="openSidebar()">
-            <img src="icons/sidebar-show.svg" class="dark-theme" />
-          </button>
+    <!-- Sidebar -->
+    <div class="open-sidebar" id="open-sidebar">
+      <button id="open-sidebar-btn" onclick="openSidebar()">
+        <img src="icons/sidebar-show.svg" class="dark-theme" />
+      </button>
+    </div>
+    <div class="sidebar-container" id="sidebar-container">
+      <div class="hide-sidebar" id="hide-sidebar">
+        <button id="hide-sidebar-btn" onclick="closeSidebar()">
+          <img src="icons/sidebar-hide.svg" class="dark-theme" />
+        </button>
+      </div>
+      <div class="sidebar-elements">
+        <div class="sidebar-link" id="sidebar-link">
+          <a href="index.html"
+            ><img src="icons/about-dark.svg" class="dark-theme"
+          /></a>
+          <a href="index.html"><div>HOME</div></a>
         </div>
-        <div class="sidebar-container" id="sidebar-container">
-          <div class="hide-sidebar" id="hide-sidebar">
-            <button id="hide-sidebar-btn" onclick="closeSidebar()">
-              <img src="icons/sidebar-hide.svg" class="dark-theme" />
-            </button>
-          </div>
-          <div class="sidebar-elements">
-            <div class="sidebar-link" id="sidebar-link">
-              <a href="index.html"
-                ><img src="icons/about-dark.svg" class="dark-theme"
-              /></a>
-              <div>HOME</div>
-            </div>
-            <div class="sidebar-link" id="sidebar-link">
-              <img src="icons/about-dark.svg" class="dark-theme" />
-              <div>ABOUT</div>
-            </div>
-            <div class="sidebar-link" id="sidebar-link">
-              <img src="icons/projects.svg" class="dark-theme" />
-              <div>PROJECTS</div>
-            </div>
-            <div class="sidebar-link" id="sidebar-link">
-              <img src="icons/resume.svg" class="dark-theme" />
-              <div>RESUME</div>
-            </div>
-            <div class="sidebar-link" id="sidebar-link">
-              <img src="icons/github-dark.svg" class="dark-theme" />
-              <div>GITHUB</div>
-            </div>
-            <div class="sidebar-link" id="sidebar-link">
-              <a href="contact-form.html">
-                <img src="icons/contact.svg" class="dark-theme" />
-              </a>
-              <div>CONTACT</div>
-            </div>
-          </div>
+        <div class="sidebar-link" id="sidebar-link">
+          <img src="icons/about-dark.svg" class="dark-theme" />
+          <div>ABOUT</div>
         </div>
-        <script src="index.js"></script>
-      </body>
-    </html>
+        <div class="sidebar-link" id="sidebar-link">
+          <img src="icons/projects.svg" class="dark-theme" />
+          <div>PROJECTS</div>
+        </div>
+        <div class="sidebar-link" id="sidebar-link">
+          <img src="icons/resume.svg" class="dark-theme" />
+          <div>RESUME</div>
+        </div>
+        <div class="sidebar-link" id="sidebar-link">
+          <img src="icons/github-dark.svg" class="dark-theme" />
+          <div>GITHUB</div>
+        </div>
+        <div class="sidebar-link" id="sidebar-link">
+          <a href="contact-form.html">
+            <img src="icons/contact.svg" class="dark-theme" />
+          </a>
+          <a href="contact-form.html"><div>CONTACT</div></a>
+        </div>
+      </div>
+    </div>
     <!-- Contact form -->
     <div class="contact-from-title-container">
       <h1>Contact me</h1>
@@ -110,7 +107,6 @@
         </form>
       </div>
     </div>
-
     <script src="index.js"></script>
   </body>
 </html>

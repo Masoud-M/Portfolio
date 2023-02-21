@@ -107,3 +107,8 @@
   filter: invert(70%) sepia(47%) saturate(3388%) hue-rotate(360deg)
     brightness(102%) contrast(105%);
 }
+
+.sidebar-link a {
+  text-decoration: none;
+  color: orange;
+}
