@@ -4,12 +4,28 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contact</title>
+    <title>About</title>
     <link rel="stylesheet" href="general.css" />
-    <link rel="stylesheet" href="contact-form.css" />
     <link rel="stylesheet" href="sidebar.css" />
+    <link rel="stylesheet" href="home.css" />
+    <link rel="stylesheet" href="about.css" />
   </head>
   <body>
+    <div class="about-container">
+      <p class="tags">&lt;&nbsp;div&nbsp;&gt; <br /></p>
+      <p class="tags">&emsp;&lt;&nbsp;h1&nbsp;&gt; <br /></p>
+      <p class="auto-text">
+        &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<span class="auto-type"></span>
+      </p>
+      <br />
+      <p class="tags">&emsp;&lt;&#47;&nbsp;h1&nbsp;&gt; <br /></p>
+      <p class="tags">&emsp;&lt;&nbsp;p&nbsp;&gt; <br /></p>
+      <p>
+        &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<span>something something :D</span>
+      </p>
+      <p class="tags">&emsp;&lt;&#47;&nbsp;p&nbsp;&gt; <br /></p>
+      <p class="tags">&lt;&#47;&nbsp;div&nbsp;&gt; <br /></p>
+    </div>
     <!-- Sidebar -->
     <div class="open-sidebar" id="open-sidebar">
       <button id="open-sidebar-btn" onclick="openSidebar()">
@@ -61,80 +77,11 @@
         </div>
       </div>
     </div>
-    <!-- Contact form -->
-
-    <div class="auto-text-container-top">
-      <p class="tags">&lt;&nbsp;div&nbsp;&gt; <br /></p>
-      <p class="tags">&emsp;&lt;&nbsp;h1&nbsp;&gt; <br /></p>
-      <p class="auto-text">
-        &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<span class="auto-type"></span>
-      </p>
-      <br />
-      <p class="tags">&emsp;&lt;&#47;&nbsp;h1&nbsp;&gt; <br /></p>
-      <p class="tags">&emsp;&lt;&nbsp;input&nbsp;&gt; <br /></p>
-    </div>
-
-    <div class="contact-container-main" id="contact-container">
-      <div class="contact-container-sub" id="contact-container-sub">
-        <form
-          id="contact-form"
-          class="contact-form"
-          action="https://formsubmit.co/0ef05d8377e88b95981713f6e57bee10"
-          method="POST"
-        >
-          <!-- Honeypot -->
-          <input type="text" name="_honey" style="display: none" />
-
-          <!-- Disable captcha -->
-          <input type="hidden" name="_captcha" value="false" />
-
-          <!-- Success message -->
-          <input
-            type="hidden"
-            name="_next"
-            value="https://masoud-m.github.io/Portfolio/success.html"
-          />
-
-          <div class="name-email-container">
-            <input
-              type="text"
-              id="name-input"
-              class="name-input"
-              name="name"
-              placeholder="Name"
-              required
-            />
-            <input
-              type="email"
-              id="email-input"
-              class="email-input"
-              name="email"
-              placeholder="Email"
-              required
-            />
-          </div>
-          <textarea
-            id="message-input"
-            class="message-input"
-            name="message"
-            rows="4"
-            placeholder="Message"
-          ></textarea>
-          <input type="submit" id="submit-btn" class="submit-btn" />
-        </form>
-      </div>
-    </div>
-
-    <div class="auto-text-container-bottom">
-      <p class="tags">&emsp;&lt;&#47;&nbsp;input&nbsp;&gt; <br /></p>
-      <p class="tags">&lt;&#47;&nbsp;div&nbsp;&gt; <br /></p>
-    </div>
-
     <script src="index.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script>
       var typed = new Typed(".auto-type", {
-        strings: ["Contact me"],
+        strings: ["About me"],
         typeSpeed: 100,
         backSpeed: 30,
         loop: true,

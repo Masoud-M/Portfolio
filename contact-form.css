@@ -81,3 +81,21 @@ h1 {
 .success-message {
   color: orange;
 }
+
+.auto-text-container-top,
+.auto-text-container-bottom {
+  display: flex;
+  justify-content: left;
+  flex-direction: column;
+  margin-left: 120px;
+}
+
+.auto-text-container-top .tags,
+.auto-text-container-bottom .tags {
+  color: rgb(202, 202, 202);
+  font-size: 26px;
+}
+.auto-text-container-top span {
+  color: orange;
+  font-size: 26px;
+}
