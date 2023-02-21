@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+    <link rel="stylesheet" href="general.css" />
+    <link rel="stylesheet" href="contact-form.css" />
+    <link rel="stylesheet" href="sidebar.css" />
+  </head>
+  <body>
+        <!-- Sidebar -->
+        <div class="open-sidebar" id="open-sidebar">
+          <button id="open-sidebar-btn" onclick="openSidebar()">
+            <img src="icons/sidebar-show.svg" class="dark-theme" />
+          </button>
+        </div>
+        <div class="sidebar-container" id="sidebar-container">
+          <div class="hide-sidebar" id="hide-sidebar">
+            <button id="hide-sidebar-btn" onclick="closeSidebar()">
+              <img src="icons/sidebar-hide.svg" class="dark-theme" />
+            </button>
+          </div>
+          <div class="sidebar-elements">
+            <div class="sidebar-link" id="sidebar-link">
+              <a href="index.html"
+                ><img src="icons/about-dark.svg" class="dark-theme"
+              /></a>
+              <div>HOME</div>
+            </div>
+            <div class="sidebar-link" id="sidebar-link">
+              <img src="icons/about-dark.svg" class="dark-theme" />
+              <div>ABOUT</div>
+            </div>
+            <div class="sidebar-link" id="sidebar-link">
+              <img src="icons/projects.svg" class="dark-theme" />
+              <div>PROJECTS</div>
+            </div>
+            <div class="sidebar-link" id="sidebar-link">
+              <img src="icons/resume.svg" class="dark-theme" />
+              <div>RESUME</div>
+            </div>
+            <div class="sidebar-link" id="sidebar-link">
+              <img src="icons/github-dark.svg" class="dark-theme" />
+              <div>GITHUB</div>
+            </div>
+            <div class="sidebar-link" id="sidebar-link">
+              <a href="contact-form.html">
+                <img src="icons/contact.svg" class="dark-theme" />
+              </a>
+              <div>CONTACT</div>
+            </div>
+          </div>
+        </div>
+        <script src="index.js"></script>
+      </body>
+    </html>
+    <!-- Contact form -->
+    <div class="contact-from-title-container">
+      <h1>Contact me</h1>
+    </div>
+    <div class="contact-container-main" id="contact-container">
+      <div class="contact-container-sub" id="contact-container-sub">
+        <form
+          id="contact-form"
+          class="contact-form"
+          action="https://formsubmit.co/0ef05d8377e88b95981713f6e57bee10"
+          method="POST"
+        >
+          <!-- Honeypot -->
+          <input type="text" name="_honey" style="display: none" />
+
+          <!-- Disable captcha -->
+          <input type="hidden" name="_captcha" value="false" />
+
+          <!-- Success message -->
+          <input
+            type="hidden"
+            name="_next"
+            value="https://masoud-m.github.io/Contact-form/success.html"
+          />
+
+          <div class="name-email-container">
+            <input
+              type="text"
+              id="name-input"
+              class="name-input"
+              name="name"
+              placeholder="Name"
+              required
+            />
+            <input
+              type="email"
+              id="email-input"
+              class="email-input"
+              name="email"
+              placeholder="Email"
+              required
+            />
+          </div>
+          <textarea
+            id="message-input"
+            class="message-input"
+            name="message"
+            rows="4"
+            placeholder="Message"
+          ></textarea>
+          <input type="submit" id="submit-btn" class="submit-btn" />
+        </form>
+      </div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>

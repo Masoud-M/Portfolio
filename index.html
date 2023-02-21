@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My portfolio</title>
+    <link rel="stylesheet" href="general.css" />
+    <link rel="stylesheet" href="contact-form.css" />
+    <link rel="stylesheet" href="sidebar.css" />
+  </head>
+  <body>
+    <!-- Sidebar -->
+    <div class="open-sidebar" id="open-sidebar">
+      <button id="open-sidebar-btn" onclick="openSidebar()">
+        <img src="icons/sidebar-show.svg" class="dark-theme" />
+      </button>
+    </div>
+    <div class="sidebar-container" id="sidebar-container">
+      <div class="hide-sidebar" id="hide-sidebar">
+        <button id="hide-sidebar-btn" onclick="closeSidebar()">
+          <img src="icons/sidebar-hide.svg" class="dark-theme" />
+        </button>
+      </div>
+      <div class="sidebar-elements">
+        <div class="sidebar-link" id="sidebar-link">
+          <a href="index.html"
+            ><img src="icons/about-dark.svg" class="dark-theme"
+          /></a>
+          <div>HOME</div>
+        </div>
+        <div class="sidebar-link" id="sidebar-link">
+          <img src="icons/about-dark.svg" class="dark-theme" />
+          <div>ABOUT</div>
+        </div>
+        <div class="sidebar-link" id="sidebar-link">
+          <img src="icons/projects.svg" class="dark-theme" />
+          <div>PROJECTS</div>
+        </div>
+        <div class="sidebar-link" id="sidebar-link">
+          <img src="icons/resume.svg" class="dark-theme" />
+          <div>RESUME</div>
+        </div>
+        <div class="sidebar-link" id="sidebar-link">
+          <img src="icons/github-dark.svg" class="dark-theme" />
+          <div>GITHUB</div>
+        </div>
+        <div class="sidebar-link" id="sidebar-link">
+          <a href="contact-form.html">
+            <img src="icons/contact.svg" class="dark-theme" />
+          </a>
+          <div>CONTACT</div>
+        </div>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
